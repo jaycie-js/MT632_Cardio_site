@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FBF5F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1A0F12" media="(prefers-color-scheme: dark)">
+<title>Cardio UE 3.1</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 17h7l2-5 4 12 4-18 3 11h8' fill='none' stroke='%23B3202A' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <h1>Cardiovascular System <small>MT632 · Unit Exam 3.1 · Nov 12</small></h1>
+      <div class="top-actions">
+        <button class="icon-btn" id="helpBtn" type="button" aria-label="Show keyboard shortcuts" title="Keyboard shortcuts (?)">?</button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme" title="Theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+    <svg class="ecg" viewBox="0 0 2560 22" preserveAspectRatio="xMinYMid slice" aria-hidden="true">
+      <path pathLength="1" d="M0 14 h60 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 q6 -6 12 0 h20 l4 3 l6 -15 l6 19 l4 -7 h24 q10 -10 20 0 h74 "/>
+    </svg>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" data-tab="home" aria-selected="true">Home</button>
+      <button role="tab" data-tab="study" aria-selected="false">Study</button>
+      <button role="tab" data-tab="quiz" aria-selected="false">Quiz</button>
+      <button role="tab" data-tab="notes" aria-selected="false">Notes</button>
+    </nav>
+  </div>
+</header>
+<main id="app" tabindex="-1"><noscript><p class="card">This study site needs JavaScript turned on.</p></noscript></main>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Figure viewer">
+  <div class="lb-bar">
+    <span id="lbCap"></span>
+    <div class="lb-tools" role="group" aria-label="Zoom">
+      <button type="button" id="lbOut" aria-label="Zoom out" title="Zoom out (-)">−</button>
+      <output id="lbPct" aria-label="Current zoom">100%</output>
+      <button type="button" id="lbIn" aria-label="Zoom in" title="Zoom in (+)">+</button>
+      <button type="button" id="lbFit" title="Fit to screen (0)">Fit</button>
+      <button type="button" id="lbFull" title="Full size (1)">Full size</button>
+    </div>
+    <button type="button" id="lbClose" title="Close (Esc)">Close ✕</button>
+  </div>
+  <div class="lb-scroll" id="lbScroll"><img id="lbImg" alt="" draggable="false"></div>
+</div>
+<div class="modal" id="help" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+  <div class="modal-card">
+    <h2 id="helpTitle">Keyboard shortcuts</h2>
+    <table class="keys">
+      <tbody>
+        <tr><th colspan="2">Quiz</th></tr>
+        <tr><td><kbd>1</kbd>–<kbd>4</kbd> or <kbd>A</kbd>–<kbd>D</kbd></td><td>Select an answer</td></tr>
+        <tr><td><kbd>Enter</kbd> or <kbd>Space</kbd></td><td>Next question (on a matching block: check answers, then next)</td></tr>
+        <tr><th colspan="2">Study</th></tr>
+        <tr><td><kbd>Enter</kbd> or <kbd>Space</kbd></td><td>Reveal the next recall answer</td></tr>
+        <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>Previous or next topic</td></tr>
+        <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Previous or next topic while in the topic list (otherwise they scroll the page)</td></tr>
+        <tr><th colspan="2">Home, Notes, quiz setup and results</th></tr>
+        <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>Previous or next tab</td></tr>
+        <tr><th colspan="2">Figure viewer</th></tr>
+        <tr><td><kbd>+</kbd> <kbd>−</kbd></td><td>Zoom in or out (also pinch, or Ctrl/⌘ + scroll)</td></tr>
+        <tr><td><kbd>0</kbd> / <kbd>1</kbd></td><td>Fit to screen / full size</td></tr>
+        <tr><td><kbd>←</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd></td><td>Pan (also drag)</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>Close</td></tr>
+        <tr><th colspan="2">Anywhere</th></tr>
+        <tr><td><kbd>?</kbd></td><td>Show or hide this list</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">Shortcuts are off while you are typing in a field or choosing from a dropdown.</p>
+    <div class="btn-row"><button type="button" class="btn" id="helpClose">Close</button></div>
+  </div>
+</div>
+<footer>Built only from the three MT632 lecture PDFs (Seeley's Essentials, Ch. 11–13). Every fact cites its deck and slide.<br>No login, no tracking. Progress stays in this browser.</footer>
+<script src="assets/content.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
